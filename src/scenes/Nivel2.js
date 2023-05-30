@@ -7,13 +7,14 @@ export default class Juego extends Phaser.Scene {
     super("nivel2");
   }
 
-  init() {
-    // this is called before the scene is created
+  init(data) {
+    // this is c
+    console.log(data);
     // init variables
     // take data passed from other scenes
     // data object param {}
 
-    this.cantidadEstrellas = 0;
+    this.cantidadEstrellas = data.cantidadEstrellas;
     console.log("Prueba !");
   }
 
@@ -101,7 +102,7 @@ export default class Juego extends Phaser.Scene {
     this.cantidadEstrellasTexto = this.add.text(
       15,
       15,
-      "Estrellas recolectadas: 0",
+      "Estrellas recolectadas: " + this.cantidadEstrellas,
       { fontSize: "15px", fill: "#FFFFFF" }
     );
   }
