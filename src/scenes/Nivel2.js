@@ -94,7 +94,7 @@ export default class Juego extends Phaser.Scene {
       this.jugador,
       this.salida,
       this.esVencedor,
-      () => this.cantidadEstrellas >= 1, // condicion de ejecucion
+      () => this.cantidadEstrellas >= 10, // condicion de ejecucion
       this
     );
 
