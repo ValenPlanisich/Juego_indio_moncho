@@ -35,8 +35,8 @@ export default class Juego extends Phaser.Scene {
       0
     );
     const objectosLayer = map.getObjectLayer("objetos");
-
     plataformaLayer.setCollisionByProperty({ colision: true });
+
 
     console.log("spawn point player", objectosLayer);
 
